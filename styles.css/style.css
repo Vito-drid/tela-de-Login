@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url(minimal-button.css);
+@import url(checkbox.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand, sans-serif;
+}
+
+body {
+    background-color: rgb(24, 23, 23);
+    color: white;
+}
+
+.tudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.button-64 {
+    transform: scale(0.8);
+    transition: .3s;
+
+    &:hover {
+        transform: scaleX(0.89) scaleY(0.83);
+        transition: .3s;
+    }
+}
+
+.login-content {
+    border-radius: 40px;
+    background-color: rgb(20, 19, 19);
+    font-weight: 400;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+
+    &:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 10px 15px 3px #000000b6;
+        transition: box-shadow .5s transform .3s;
+    }
+}
+
+.content-decoration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    width: 60%;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(67deg, rgba(70, 13, 167, 0.6) 22%, rgba(25, 6, 148, 0.6) 100%);
+    border-radius: 40px 0 0 40px;
+    text-align: center;
+
+    & .decoration {
+        margin: 10px 40px 10px;
+        width: 450px;
+    }
+}
+
+.login {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: -10px;
+    font-size: 30px;
+}
+
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lembrar-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: -5px 28px 0;
+    color: rgb(141, 141, 141);
+
+    & p {
+        cursor: pointer;
+        transition: .2;
+
+        &:hover {
+            color: white;
+            transition: .2s;
+        }
+    }
+}
+
+.criar-conta {
+    color: rgb(141, 141, 141);
+    transition: .2;
+}
+
+.roxo{
+    color: rgba(99, 7, 219, 0.836);
+    cursor: pointer;
+
+    &:hover{
+        color: rgb(79, 3, 255);
+    }
+}
+
+.criar-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.facebook{
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 10px;
+    transition: .3s;
+
+    &:hover{
+        box-shadow: 0 0 12px 5px #00000065;
+        transform: scale(1.08);
+        transition: .3s;
+    }
+}
+
+.google{
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 10px;
+    transition: .3s;
+
+    &:hover{
+        box-shadow: 0 0 12px 5px #00000065;
+        transform: scale(1.08);
+        transition: .3s;
+    }
+}
+
+.logar-com{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+}
+
+.ou{
+    color: rgb(141, 141, 141);
+    display: flex;
+    justify-content: center;
+    margin: -5px 0 5px;
+}
+
+.checkbox-wrapper-2 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-data.input-filled {
+    background-color: #5b00c236; 
+    
+    &:hover{
+        background-color: #6f0cdf46; 
+    }
+}
+
+.input-data {
+    color: white;
+    border-radius: 10px;
+    width: 400px;
+    font-size: 15px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: transparent;
+    outline: none;
+    padding-left: 10px;
+    transition: .2s;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.04);
+        transition: .2s;
+    }
+}
+
+
+
+
+
+.facebook {
+    width: 25px;
+}
+
+.google {
+    width: 25px;
+}
+
+
+
+
+
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 400px; /* Certifique-se de que isso corresponda à largura do campo de entrada */
+}
+
+.input-data-password {
+    width: 100%;
+    padding-right: 40px; /* Adiciona espaço para a checkbox */
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.checkbox {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Ajuste conforme necessário para a posição da checkbox */
+    transform: translateY(-50%);
+    cursor: pointer;
+    appearance: none; /* Remove o estilo padrão da checkbox */
+    width: 20px; /* Ajuste o tamanho da checkbox */
+    height: 20px; /* Ajuste o tamanho da checkbox */
+    background: #ffffff; /* Cor de fundo da checkbox */
+    border-radius: 4px; /* Ajuste para a forma da checkbox */
+    border: 1px solid #ccc; /* Borda da checkbox */
+}
+
+.checkbox:checked {
+    background: #4619c2; /* Cor de fundo quando marcada */
+}
+
+.checkbox:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px; /* Ajuste o tamanho do "check" */
+    height: 10px; /* Ajuste o tamanho do "check" */
+    background: #fff; /* Cor do "check" */
+    border-radius: 2px; /* Ajuste o formato do "check" */
+}
+
